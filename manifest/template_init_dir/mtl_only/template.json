@@ -1,0 +1,34 @@
+{
+    "sides": {
+        "left": {
+            "mesh": "template_shoot_left.vtk"
+        }, 
+        "right": {
+            "mesh": "template_shoot_right.vtk"
+        }
+    },
+    "ashs_label_type": {
+        "wm": [15],
+        "gm": [8, 10, 11, 12, 13],
+        "bg": [0, 1, 2, 3, 4, 7, 14]    
+    },
+    "labels_for_surface_matching": [ 15, 8, 10, 11, 12, 13 ],
+    "registration": {
+        "varifold_sigma": 5.0,
+        "lddmm_sigma": 5.0,
+        "lddmm_gamma": 0.05,
+        "lddmm_nt": 10,
+        "jacobian_penalty": 10.0
+    },
+    "cruise": {
+        "inflate_maxiter": 1000,
+        "inflate_reduction": 0.1,
+        "laminar_n_layers": 10,
+        "laminar_method": "distance-preserving"
+    },
+    "template_build": {
+        "schedule": [10, 10, 10, 50],
+        "remeshing_edge_length_pct": 1.0,
+        "root_sigma_factor": 2.4
+    }
+}
