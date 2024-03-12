@@ -1,10 +1,8 @@
 #!/bin/bash
+SCRIPT_DIR=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
 
-# Project paths
-ROOT=/data/pauly2/t2_crashs
-
-# CRASHS location
-CRASHS_HOME=/data/pauly2/tk/crashs
+# Read the installation-specific directories from the env.sh file
+source $SCRIPT_DIR/env.sh
 
 # Add to path
 PATH=$ROOT/bin:$PATH
