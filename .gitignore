@@ -1,4 +1,6 @@
 work
 tmp
 input
+dump
+stats
 scripts/env.sh
